@@ -32,6 +32,6 @@ public class Mascota {
     //para cumplir años (envejecer)
     public void cumplirAnios() {
         this.edad++;
-        System.out.println(nombre + " ha cumplido un año más 🎉");
+        System.out.println(nombre + " ha cumplido un año más");
     }
 }

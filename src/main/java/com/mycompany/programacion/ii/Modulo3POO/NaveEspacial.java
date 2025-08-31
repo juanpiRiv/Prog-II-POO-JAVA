@@ -13,7 +13,6 @@ public class NaveEspacial {
     private String nombre;
     private int combustible;
     private final int MAX_COMBUSTIBLE = 100; // Límite de capacidad
-
     // cntrs
     public NaveEspacial(String nombre, int combustibleInicial) {
         this.nombre = nombre;
@@ -23,7 +22,6 @@ public class NaveEspacial {
             this.combustible = combustibleInicial;
         }
     }
-
     // despegar
     public void despegar() {
         if (combustible >= 10) {
@@ -33,7 +31,6 @@ public class NaveEspacial {
             System.out.println("️ No hay suficiente combustible para despegar.");
         }
     }
-
     // avanzar
     public void avanzar(int distancia) {
         int consumo = distancia / 2; // 1 unidad de combustible cada 2 km
@@ -44,7 +41,6 @@ public class NaveEspacial {
             System.out.println("️No hay suficiente combustible para avanzar " + distancia + " km.");
         }
     }
-
     //recargar
     public void recargarCombustible(int cantidad) {
         if (combustible + cantidad > MAX_COMBUSTIBLE) {
@@ -55,7 +51,6 @@ public class NaveEspacial {
             System.out.println("Se recargaron " + cantidad + " unidades de combustible.");
         }
     }
-
     //mostrar estado
     public void mostrarEstado() {
         System.out.println("Nave: " + nombre);

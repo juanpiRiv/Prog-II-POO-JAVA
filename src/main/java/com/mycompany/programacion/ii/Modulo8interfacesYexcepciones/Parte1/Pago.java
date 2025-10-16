@@ -2,14 +2,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.programacion.ii.Modulo7interfacesYexcepciones.Parte2Exception;
+package com.mycompany.programacion.ii.Modulo8interfacesYexcepciones.Parte1;
 
 /**
  *
  * @author juanp
  */
-public class EdadInvalidaException extends Exception {
-    public EdadInvalidaException(String mensaje) {
-        super(mensaje);
-    }
+public interface Pago {
+    void procesarPago(double monto);
 }
